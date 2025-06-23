@@ -18,15 +18,19 @@
 
 
 
-## Details
+## 重庆邮电大学外国语学院资料室简介
 
-Read more 👉 [Documentation - MkDocs Material Boilerplate]
+
+
+欢迎来到重庆邮电大学外国语学院资料室！  
+这里是学院师生的知识共享平台，汇集了丰富的教学资料、参考书籍和学术资源。资料室致力于支持教学科研，推动外语专业的发展与交流。
+
 
 [Documentation - MkDocs Material Boilerplate]: https://peaceiris.github.io/mkdocs-material-boilerplate/
 
 
 
-## Quick start
+## 图书室地址
 
 ```sh
 git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
@@ -38,7 +42,7 @@ inv serve --config-file mkdocs-sample.yml
 
 
 
-## Links
+## 图书室开放时间
 
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
 - [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
@@ -48,7 +52,7 @@ inv serve --config-file mkdocs-sample.yml
 
 
 
-## License
+## 图书室书籍分类
 
 - [MIT License]
 - [The graduate cap icon] made by [Freepik] from [www.flaticon.com] is licensed by [CC 3.0 BY]
