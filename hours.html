@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>开放时间 - 重庆邮电大学外国语学院资料室</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #002050;
+    }
+    #details {
+      margin-top: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: none;
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🕒 资料室开放时间</h1>
+  <p>资料室的基本开放时间是：周一至周五 8:30 - 19:30</p>
+
+  <button id="toggleDetails">查看更多详细安排</button>
+
+  <div id="details">
+    <ul>
+      <li>周一至周五：8:30 - 17:30</li>
+      <li>周六、周日及国家法定节假日不开放</li>
+      <li>寒暑假期间开放时间请关注学院通知</li>
+      <li>特殊活动期间可能临时调整，敬请留意公告</li>
+    </ul>
+  </div>
+
+  <a href="index.html" class="back">← 返回首页</a>
+
+  <script>
+    const btn = document.getElementById('toggleDetails');
+    const details = document.getElementById('details');
+    btn.addEventListener('click', () => {
+      if(details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+        btn.textContent = '收起详细安排';
+      } else {
+        details.style.display = 'none';
+        btn.textContent = '查看更多详细安排';
+      }
+    });
+  </script>
+</body>
+</html>
