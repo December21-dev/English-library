@@ -4,38 +4,55 @@
   <meta charset="UTF-8" />
   <title>重庆邮电大学外国语学院资料室</title>
   <style>
+    /* 重置和基础 */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding-top: 60px; /* 给固定导航留出高度 */
       background-color: #f5f5f5;
     }
+    /* 固定顶部导航栏 */
     nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       background-color: #004080;
-      padding: 15px;
-      text-align: center;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
     nav a {
-      color: #ffffff;
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 18px;
       font-size: 16px;
       font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
     }
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover,
+    nav a:focus {
+      background-color: #003060;
     }
+    /* 主体容器 */
     .container {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 0 auto 40px;
       padding: 20px;
-      background-color: #ffffff;
+      background-color: white;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    /* 标题居中 */
     h1, h2, p {
       text-align: center;
     }
+    /* 横幅图 */
     img.banner {
       width: 100%;
       max-width: 900px;
@@ -43,14 +60,15 @@
       margin: 20px auto;
       border-radius: 10px;
     }
+    /* 内容区间距 */
     section {
-      margin: 40px 0;
+      margin: 50px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- 导航栏（已去掉教师专区） -->
+  <!-- 固定顶部导航栏 -->
   <nav>
     <a href="#intro">首页</a>
     <a href="#resources">资料区</a>
@@ -62,12 +80,11 @@
     <a href="#contact">联系我们</a>
   </nav>
 
-  <!-- 横幅图片 -->
-  <img class="banner" src="https://raw.githubusercontent.com/December21-dev/English-library/main/QQ%E5%9B%BE%E7%89%8720241210202044.jpg"
-       alt="资料室横幅图" />
-
-  <!-- 内容区域 -->
+  <!-- 页面内容 -->
   <div class="container">
+
+    <img class="banner" src="https://raw.githubusercontent.com/December21-dev/English-library/main/QQ%E5%9B%BE%E7%89%8720241210202044.jpg"
+         alt="资料室横幅图" />
 
     <section id="intro">
       <h1>重庆邮电大学外国语学院资料室简介</h1>
@@ -115,7 +132,6 @@
     </section>
 
   </div>
+
 </body>
 </html>
-
-
