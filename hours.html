@@ -4,21 +4,44 @@
   <meta charset="UTF-8" />
   <title>开放时间 - 重庆邮电大学外国语学院资料室</title>
   <style>
-    body {
+    /* 让背景图铺满且固定 */
+    body, html {
+      margin: 0; padding: 0; height: 100%;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f5f5f5;
+      background-image: url('https://raw.githubusercontent.com/December21-dev/English-library/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250508104441.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
     }
+
+    /* 内容容器加个半透明背景，防止文字看不清 */
+    .content {
+      max-width: 900px;
+      margin: 60px auto 40px;
+      padding: 20px 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+    }
+
     h1 {
       text-align: center;
-      color: #004080;
+      color: #fff;
+      margin-bottom: 30px;
     }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     button {
-      padding: 10px 16px;
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 20px;
       font-size: 16px;
-      margin-top: 20px;
       cursor: pointer;
       background-color: #004080;
       color: white;
@@ -29,40 +52,54 @@
     button:hover {
       background-color: #002050;
     }
+
     #details {
       margin-top: 20px;
-      background-color: white;
+      background-color: rgba(255,255,255,0.9);
+      color: #000;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       display: none;
     }
+
     a.back {
-      display: inline-block;
-      margin-top: 30px;
-      text-decoration: none;
+      display: block;
+      margin: 30px auto 0;
+      max-width: 120px;
+      text-align: center;
+      padding: 10px;
       color: #004080;
       font-weight: bold;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    a.back:hover {
+      background-color: #e6e6e6;
     }
   </style>
 </head>
 <body>
 
-  <h1>🕒 资料室开放时间</h1>
-  <p>资料室的基本开放时间是：周一至周五 8:30 - 19:30</p>
+  <div class="content">
+    <h1>🕒 资料室开放时间</h1>
 
-  <button id="toggleDetails">查看更多详细安排</button>
+    <p>资料室的基本开放时间是：周一至周五 8:30 - 19:30</p>
 
-  <div id="details">
-    <ul>
-      <li>周一至周五：8:30 - 17:30</li>
-      <li>周六、周日及国家法定节假日不开放</li>
-      <li>寒暑假期间开放时间请关注学院通知</li>
-      <li>特殊活动期间可能临时调整，敬请留意公告</li>
-    </ul>
+    <button id="toggleDetails">查看更多详细安排</button>
+
+    <div id="details">
+      <ul>
+        <li>周一至周五：8:30 - 17:30</li>
+        <li>周六、周日及国家法定节假日不开放</li>
+        <li>寒暑假期间开放时间请关注学院通知</li>
+        <li>特殊活动期间可能临时调整，敬请留意公告</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back">← 返回首页</a>
   </div>
-
-  <a href="index.html" class="back">← 返回首页</a>
 
   <script>
     const btn = document.getElementById('toggleDetails');
