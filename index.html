@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <title>重庆邮电大学外国语学院资料室</title>
   <style>
-    /* 重置和基础 */
     body, html {
       margin: 0; padding: 0; height: 100%;
       font-family: Arial, sans-serif;
       background: #f0f2f5;
     }
-
-    /* 透明玻璃感导航栏 */
     nav {
       position: fixed;
       top: 0; left: 0; width: 100%;
@@ -28,8 +25,6 @@
       font-weight: 600;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    /* 导航链接样式 */
     nav a {
       color: #fff;
       text-decoration: none;
@@ -40,8 +35,6 @@
       transition: background-color 0.3s ease, color 0.3s ease;
       user-select: none;
     }
-
-    /* 悬浮效果 */
     nav a:hover {
       background-color: rgba(255, 255, 255, 0.25);
       color: #004080;
@@ -49,22 +42,18 @@
       box-shadow: 0 2px 8px rgba(0, 64, 128, 0.3);
       cursor: pointer;
     }
-
-    /* 横幅容器，撑满屏幕高度减去导航栏 */
     .hero {
       position: relative;
       width: 100%;
       height: calc(100vh - 60px);
-      margin-top: 60px; /* 顶部导航高度 */
+      margin-top: 60px;
       overflow: hidden;
-      background: #000; /* 防止图片加载慢时空白 */
+      background: #000;
     }
-
-    /* 铺满横幅图 */
     .hero img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* 图片裁剪铺满 */
+      object-fit: cover;
       display: block;
       filter: brightness(0.8);
       transition: filter 0.3s ease;
@@ -72,8 +61,6 @@
     .hero img:hover {
       filter: brightness(1);
     }
-
-    /* 图片底部文字覆盖 */
     .hero-text {
       position: absolute;
       bottom: 30px;
@@ -88,43 +75,24 @@
       letter-spacing: 2px;
       user-select: none;
     }
-
   </style>
 </head>
 <body>
 
-  <!-- 固定顶部导航栏 -->
   <nav>
     <a href="#intro">资料室简介</a>
     <a href="#map">地图导航</a>
     <a href="hours.html">开放时间</a>
-    <a href="#categories">书籍分类</a>
+    <a href="book-categories.html">书籍分类</a> <!-- 这里跳转分类主页 -->
     <a href="#studyroom">自习室开放</a>
     <a href="#faq">常见问题</a>
     <a href="#about">关于本站</a>
   </nav>
 
-  <!-- 横幅大图 -->
   <div class="hero" id="intro">
     <img src="https://raw.githubusercontent.com/December21-dev/English-library/main/QQ%E5%9B%BE%E7%89%8720241210202044.jpg" alt="资料室横幅" />
     <div class="hero-text">重庆邮电大学外国语学院资料室 欢迎您</div>
   </div>
-
-  <!-- 书籍分类板块 -->
-  <section id="categories" style="padding: 60px 20px; max-width: 1000px; margin: auto;">
-    <h2 style="text-align:center; margin-bottom: 40px; font-family: 'Microsoft YaHei', sans-serif; font-size: 28px; color: #004080;">书籍分类</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
-
-      <!-- 英语读物卡片 -->
-      <a href="英语读物.html" style="text-decoration: none; color: inherit;">
-        <div style="width: 260px; height: 180px; background-color: #e0f2ff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: center; align-items: center; transition: all 0.3s;">
-          <h3 style="margin: 0; font-size: 22px; color: #004080;">英语读物</h3>
-          <p style="margin: 10px 0 0; font-size: 14px; color: #555;">中英文对照 / 原版经典</p>
-        </div>
-      </a>
-
-    </div>
-  </section>
 
 </body>
 </html>
