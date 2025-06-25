@@ -8,27 +8,27 @@
       margin: 0;
       padding: 0;
       font-family: "Microsoft YaHei", sans-serif;
-      background-color: #f9f9f9;
-      line-height: 1.8;
+      background: linear-gradient(135deg, #e6f0ff, #f9fcff);
       color: #333;
     }
 
     header {
       background-color: #004080;
       color: white;
-      padding: 20px;
+      padding: 24px;
       text-align: center;
       font-size: 28px;
       font-weight: bold;
+      letter-spacing: 2px;
     }
 
-    .container {
+    .content {
       max-width: 960px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: #fff;
+      background: white;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
@@ -38,57 +38,55 @@
 
     p {
       text-indent: 2em;
+      line-height: 1.8;
     }
 
-    .footer-hero {
+    .background-section {
+      margin-top: 60px;
       position: relative;
-      width: 100%;
       height: 300px;
-      margin-top: 50px;
       overflow: hidden;
-      background: #000;
     }
 
-    .footer-hero img {
+    .background-section img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(0.7);
+      filter: brightness(0.6);
     }
 
-    .footer-hero-text {
+    .background-text {
       position: absolute;
-      bottom: 20px;
+      bottom: 0;
       width: 100%;
       text-align: center;
-      color: white;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: bold;
+      color: white;
       background-color: rgba(0, 0, 0, 0.4);
-      padding: 12px 0;
-      font-family: "Microsoft YaHei", sans-serif;
-      letter-spacing: 2px;
+      padding: 16px;
     }
 
-    a.back {
-      display: inline-block;
-      margin-top: 30px;
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
       color: #004080;
       text-decoration: none;
-      font-weight: bold;
     }
 
-    a.back:hover {
+    .back-home:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<header>资料室简介</header>
+<header>外国语学院资料室简介</header>
 
-<div class="container">
-  <h2>位置与定位</h2>
+<div class="content">
+  <h2>位置与功能</h2>
   <p>
     外国语学院图书室位于外国语学院行政办公区五教5603房间，汇集了英语专业学习资源和公共英语阅读资源，是学校图书馆英语资源的重要补充。
   </p>
@@ -114,18 +112,18 @@
     图书室拥有巴黎高等商学院公开课、东伊利诺伊州大学公开课、公众人物演讲、国际大专辩论会、世界经典电影、BBC纪录片、历史频道纪录片、全国大学生英语演讲比赛等电子资源100TB。
   </p>
 
-  <h2>开放与借阅方式</h2>
+  <h2>开放时间与借阅方式</h2>
   <p>
     图书室开放时间为星期一到星期五（9:00-20:30）。本校同学可以凭学生证在图书室管理教师处登记借阅图书等资源。
   </p>
 
-  <a href="index.html" class="back">← 返回首页</a>
+  <a href="index.html" class="back-home">← 返回首页</a>
 </div>
 
-<!-- 底部背景图带欢迎语 -->
-<div class="footer-hero">
+<!-- 不同背景图 -->
+<div class="background-section">
   <img src="https://raw.githubusercontent.com/December21-dev/English-library/main/QQ%E5%9B%BE%E7%89%8720241210202044.jpg" alt="资料室背景图">
-  <div class="footer-hero-text">重庆邮电大学外国语学院资料室欢迎您</div>
+  <div class="background-text">欢迎走进重庆邮电大学外国语学院资料室</div>
 </div>
 
 </body>
